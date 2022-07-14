@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- NavBar -->
+    <div class="nav_background">
+        <div class="nav_bar">
+            <h1 class="DojoWeather">DojoWeather</h1>
+            <ul>
+                <li onclick="CityAlert()">Burbank</li>
+                <li onclick="CityAlert()">Chicago</li>
+                <li onclick="CityAlert()">Dallas</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of NavBar -->
+
+    <div class="container">
+        <div class="city_header">
+            <p class="current_city">San Jose</p>
+            <div class="select_area">
+                <label for="cars">show temperature in &nbsp;</label>
+                <select onchange="changeCtoF(this)" name="temperature" id="temperature">
+                    <option value="F">&#8457</option>
+                    <option value="C">&#8451</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="weather_cards">
+            <div class="weather_card">
+                <p class="day">Today</p>
+                <img src="assets/some_rain.png" alt="Rain image" class="weather_image">
+                <p>some rain</p>
+                <div class="temps">
+                    <p class="tempvalue red" id="temp1">75&#176;</p>
+                    <p class="tempvalue blue" id="temp2">65&#176;</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <p class="day">Tomorrow</p>
+                <img src="assets/some_sun.png" alt="Sun image" class="weather_image">
+                <p>some sun</p>
+                <div class="temps">
+                    <p class="tempvalue red" id="temp3">80&#176;</p>
+                    <p class="tempvalue blue" id="temp4">66&#176;</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <p class="day">Friday</p>
+                <img src="assets/some_clouds.png" alt="Cloud image" class="weather_image">
+                <p>some clouds</p>
+                <div class="temps">
+                    <p class="tempvalue red" id="temp5">69&#176;</p>
+                    <p class="tempvalue blue" id="temp6">61&#176;</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <p class="day">Saturday</p>
+                <img src="assets/some_sun.png" alt="Sun image" class="weather_image">
+                <p>some rain</p>
+                <div class="temps">
+                    <p class="tempvalue red" id="temp7">78&#176;</p>
+                    <p class="tempvalue blue" id="temp8">70&#176;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookie_policy">
+        <img src="assets/cookie.png" alt="Cookie image" class="cookie_image">
+        <div class="cookie_text">
+            <p class="cookie_bold">Stop! Cookie Time</p>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        
+        <button class="accept" onclick="acceptcookiepolicy('.cookie_policy')">I Accept</button>
+    </div>
+    
+</body>
+</html>
